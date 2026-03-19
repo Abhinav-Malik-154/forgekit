@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #0f0f0f;
+  --bg-card: #111118;
+  --border: #1a1a2e;
+  --border-active: #7c3aed;
+  --text-primary: #e2e8f0;
+  --text-muted: #64748b;
+  --text-code: #00ff9d;
+  --accent-green: #00ff9d;
+  --accent-purple: #7c3aed;
+  --accent-cyan: #06b6d4;
+  --accent-orange: #f59e0b;
+  --accent-red: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+/* Terminal glow effect */
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(0, 255, 157, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 157, 0.6); }
+}
+
+.terminal-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Scan line effect */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-green);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(0, 255, 157, 0.3);
+  color: #fff;
+}
