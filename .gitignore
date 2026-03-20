@@ -1,3 +1,157 @@
+# ===========================================
+# SECURITY - SENSITIVE FILES (NEVER COMMIT)
+# ===========================================
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.pub
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*.ppk
 21238914ffmx
 21238914ffmx.pub
-*.pub
+
+# Environment files with secrets
+.env
+.env.*
+!.env.example
+!.env.template
+.envrc
+*.local
+
+# Secret/config files
+secrets.json
+secrets.yaml
+secrets.yml
+config.secret.*
+*.secret
+credentials.json
+service-account*.json
+
+# Wallet and crypto keys
+*.keystore
+*.wallet
+keystore/
+wallets/
+.secret
+mnemonic.txt
+private_key.txt
+
+# ===========================================
+# PYTHON (Backend)
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ===========================================
+# NODE.JS (Frontend)
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+
+# Next.js
+.next/
+out/
+.vercel
+
+# ===========================================
+# FOUNDRY / SOLIDITY (Contracts)
+# ===========================================
+cache/
+out/
+broadcast/
+forge-cache/
+.forge-snapshots/
+
+# Hardhat (if used)
+artifacts/
+cache_hardhat/
+typechain/
+typechain-types/
+
+# ===========================================
+# IDE & EDITORS
+# ===========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ===========================================
+# OS FILES
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================================
+# LOGS & DEBUG
+# ===========================================
+*.log
+logs/
+debug/
+*.debug
+
+# ===========================================
+# MISC
+# ===========================================
+.cache/
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+coverage/
+.nyc_output/
