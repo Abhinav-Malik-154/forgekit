@@ -329,17 +329,19 @@ export default function Home() {
             {/* Left - Logo */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '16px' }}>FORGEKIT</span>
-              <span style={{ 
-                display: 'flex', 
-                alignItems: 'center', 
+              <span style={{ color: '#64748b', fontSize: '11px' }}>by</span>
+              <span style={{ color: '#7c3aed', fontWeight: '500', fontSize: '12px' }}>ABHINAV MALIK</span>
+              <span style={{
+                display: 'flex',
+                alignItems: 'center',
                 gap: '6px',
-                color: '#00ff9d', 
+                color: '#00ff9d',
                 fontSize: '11px',
               }}>
-                <span style={{ 
-                  width: '6px', 
-                  height: '6px', 
-                  borderRadius: '50%', 
+                <span style={{
+                  width: '6px',
+                  height: '6px',
+                  borderRadius: '50%',
                   background: '#00ff9d',
                   animation: 'pulse 2s infinite',
                 }} />
